@@ -111,7 +111,7 @@
 <h2>Select Industry Projects</h2>
 <ul>
 
-<li>
+<!-- <li>
   <strong>PlaidML Tile eDSL</strong> (2019-2021)
   <br>
   <em>Tensor Compiler & Domain-Specific Language for ML Frameworks</em>
@@ -147,7 +147,63 @@
   </p>
   
   <div style="clear: both;"></div>
+</li> -->
+<li>
+  <strong>PlaidML Tile eDSL</strong> (2019–2021)
+  <br>
+  <em>Tensor Compiler & Domain-Specific Language for ML Frameworks</em>
+  <br>
+  <a href="https://github.com/plaidml/plaidml/tree/plaidml-v1" 
+     target="_blank" rel="noopener noreferrer">
+     [PlaidML v1 Repository]
+  </a>
+
+  <p>
+    Contributed to PlaidML, an MLIR-based tensor compiler targeting heterogeneous
+    hardware (NVIDIA, AMD, Intel GPUs/CPUs, Metal). Developed and extended
+    the Tile eDSL (C++/Python) to express tensor computations and integrate
+    with ONNX Runtime, OpenVINO, and TensorFlow.
+  </p>
+
+  <p><strong>Key contributions:</strong></p>
+  <ul style="margin: 0.5rem 0 1rem 1.5rem;">
+    <li>
+      Designed and implemented the PlaidML execution provider for ONNX Runtime,
+      extending Tile to support ONNX operator lowering and backend execution.
+    </li>
+
+    <li>
+      Developed abstractions in Tile to express stencil-based and reduction-heavy
+      scientific workloads within a tensor compiler infrastructure.
+    </li>
+
+    <li>
+      Collaborated with University of Washington and Intel Labs to implement
+      grid-based volume and surface integral formulations in Tile,
+      enabling structured stencil + reduction kernels to execute on
+      accelerator backends.
+    </li>
+
+    <li>
+      Worked with AI acceleration hardware teams on hardware–software co-design,
+      analyzing memory access patterns and backend execution efficiency.
+    </li>
+  </ul>
+
+  <p class="note">
+    <strong>Example workload:</strong>
+    <a href="https://github.com/plaidml/plaidml/tree/plaidml-v1/networks/scitile"
+       target="_blank" rel="noopener noreferrer">
+      SciTile implementation of grid-based surface and volume integrals
+    </a>,
+    based on the formulation in
+    <a href="https://asmedigitalcollection.asme.org/computingengineering/article/18/2/021013/369916/Treat-All-Integrals-as-Volume-Integrals-A-Unified"
+       target="_blank" rel="noopener noreferrer">
+      “Treat All Integrals as Volume Integrals”
+    </a>.
+  </p>
 </li>
+
   
   <li>
     <strong>Intel Mohawk River Ambient Compute Prototype</strong> (2018-2019)
